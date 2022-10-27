@@ -50,7 +50,7 @@ Historically, Flink's `StateBackend` interface intermixed these concepts in a wa
 In 1.13, checkpointing configurations have been extracted into their own interface, `CheckpointStorage`. 
 
 This change does not affect the runtime behavior and simply provides a better mental model to users. 
-Pipelines can be updated to use the new the new abstractions without losing state, consistency, or change in semantics. 
+Pipelines can be updated to use the new abstractions without losing state, consistency, or change in semantics. 
 
 Please follow the [migration guide](https://nightlies.apache.org/flink/flink-docs-release-1.13/docs/ops/state/state_backends/#migrating-from-legacy-backends) or the JavaDoc on the deprecated state backend classes - `MemoryStateBackend`, `FsStateBackend` and `RocksDBStateBackend` for migration details. 
 
